@@ -1,0 +1,243 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Open+Sans:wght@300&family=Roboto+Flex:wght@100;200;300&family=Roboto:wght@100;300;400;500&display=swap");
+
+body {
+  background-color: #eee;
+  font-family: "Inter", sans-serif;
+  background-color: #49484a;
+}
+
+
+body,
+html {
+  height: 100%;
+  background-color: rgb(121, 119, 119);
+}
+
+.hero-banner {
+  position: relative;
+  height: 100%;
+  background: url("../img/ngejemasong.jpg") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-overlay {
+  padding: 0, 0, 40px, 40px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: #fff;
+}
+
+
+.gradient-border-button {
+color: white;
+font-size: 16px;
+padding: 12px 24px;
+/* border: 4px solid transparent;
+border-image: linear-gradient(45deg, #FFE36D, #F7EFCB) 10;
+border-image-slice: 1;
+cursor: pointer;
+background-color: transparent;
+background-clip: padding-box; */
+border: 2px solid #ffe36d;
+}
+
+/* .gradient-border-button:hover{
+background-image: linear-gradient(430deg, #ffe36d, transparent);
+border-color: #ece1b1;
+} */
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+/* =============================Herobanner=================================== */
+
+
+.swiper-slide {
+  height: 600px;
+}
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+} 
+
+
+
+
+
+
+/* ============================================movie selection========================================= */
+
+.dropdown .btn {
+  background-color: transparent;
+  color: #eee;
+  border: 2px solid #ffe36d;
+}
+
+.dropdown .btn:hover {
+  color: #fff;
+  background: #ffe36d;
+  background: linear-gradient(to right, #ffe36d 50%, rgba(0, 0, 0, 0) 90%);
+}
+
+.dropdown-item {
+  text-decoration: none;
+}
+
+.dropdown-menu ul {
+  position: absolute;
+}
+
+.dropdown-menu ul li {
+  list-style: none;
+}
+
+.dropdown-menu ul li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.dropdown ul li a.active {
+  background-color: #ffe36d;
+  color: #fff;
+}
+
+
+
+
+/* ===============Movie List======================= */
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+.col-md-6 img {
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.col-md-6 {
+  position: relative;
+}
+
+.col-md-6 .book-now {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 150px;
+  background-color: transparent;
+  border: solid 2px #ffe36d;
+  border-radius: 10px;
+  color: #fff;
+}
+
+ .col-md-6 .rate-us {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 100px;
+  background-color: transparent;
+  border: solid 2px #ffe36d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+ .col-md-6:hover img {
+  transform: scale(1.2);
+}
+
+ .col-md-6:hover button {
+  display: block;
+}
+
+ .book-now:hover {
+  background-color: #ffe36d;
+}
+ .rate-us:hover {
+  background-color: #ffe36d;
+}
+.load-more .btn {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #ffe36d;
+  background-color: transparent;
+}
+
+.load-more .btn:hover {
+  color: #fff;
+  background: #ffe36d;
+  background: linear-gradient(to right, #ffe36d 10%, rgba(0, 0, 0, 0) 60%);
+}
+
+.more-content {
+  display: none;
+}
+
+/* ============================================Image Section================= */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+@media (max-width: 768px) {
+  .load-more {
+    margin-top: -20px;
+  }
+
+}
+
+
+/* Custom CSS for smaller screens (between 576px and 991.98px) */
+@media (max-width: 991.98px) {
+  .hero-banner {
+    flex-wrap: wrap;
+  }
+  .hero-overlay {
+    width: 100%;
+    padding-top: 20px;
+    height: 100%;
+  }
+
+}
+
+@media screen and (max-width:576px){
+  .hero-banner {
+    flex-wrap: wrap;
+    height: 30%;
+  }
+}

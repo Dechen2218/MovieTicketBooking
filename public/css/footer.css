@@ -1,0 +1,75 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Open+Sans:wght@300&family=Roboto+Flex:wght@100;200;300&family=Roboto:wght@100;300;400;500&display=swap");
+
+/* =========================Footer================================== */
+
+.footer {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container {
+  margin-top: 30px;
+}
+
+.footer-title {
+  position: relative;
+  color: #fff;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.footer-title .logo {
+  text-decoration: none;
+  color: #ffe36d;
+}
+
+.footer-links a {
+  padding: 10px 0;
+  color: #fff;
+  display: block;
+  transition: color 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.footer-social-links li {
+  display: inline-block;
+}
+
+.footer-social-links a {
+  float: left;
+  text-align: center;
+  color: #ffe36d;
+}
+
+.footer-social-links li span a {
+ font-size: 30px;
+}
+
+.footer-bottom {
+  padding: 25px 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* ==========================================Responsivness for mobile========================================= */
+
+@media (max-width: 576px) {
+  
+  .footer-title .logo {
+    text-decoration: none;
+    color: #ffe36d;
+  }
+  .footer-title {
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (max-width:992px) {
+  .footer-social-links{
+    margin-top: 20px;
+  }
+}
